@@ -1,16 +1,13 @@
 @font-face {
-    font-family: 'cerebri_sansregular';
-    src: url('./cerebri-sans-regular-webfont.woff2') format('woff2'),
-         url('./cerebri-sans-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
+    font-family: Cerebri Sans;
+    src: url(./Cerebri-Sans-Regular.ttf);
+    font-weight: bold;
+  }
 body {
     background-color: #fff5ec;
     /* background-color: #f8f7f4; */
     color: #000;
-/*     font-family: 'Cerebri Sans'; */
+    font-family: Cerebri Sans;
   }
 .block-reveal {
    
