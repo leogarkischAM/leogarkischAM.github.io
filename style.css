@@ -1,13 +1,23 @@
 @font-face {
-    font-family: Cerebri Sans;
-    src: url(./Cerebri-Sans-Regular.ttf);
+    font-family: Cerebri Sans Regular;
+    src: url(./Fonts/Cerebri-Sans-Regular.ttf);
+    font-weight: bold;
+  }
+@font-face {
+    font-family: Cerebri Sans SemiBold;
+    src: url(./Fonts/Cerebri-Sans-SemiBold.ttf);
+    font-weight: bold;
+  }
+@font-face {
+    font-family: Cerebri Sans Bold;
+    src: url(./Fonts/Cerebri-Sans-Bold.ttf);
     font-weight: bold;
   }
 body {
     background-color: #fff5ec;
     /* background-color: #f8f7f4; */
     color: #000;
-    font-family: Cerebri Sans;
+    font-family: Cerebri Sans SemiBold;
   }
 .block-reveal {
    
