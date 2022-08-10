@@ -1,3 +1,7 @@
+@font-face {
+    font-family: 'Cerebri Sans';
+    src: url(./Cerebri-Sans-Regular.ttf);
+  }
 body {
     background-color: #fff5ec;
     /* background-color: #f8f7f4; */
