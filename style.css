@@ -16,7 +16,7 @@
 body {
     background-color: #fff5ec;
     /* background-color: #f8f7f4; */
-    color: #000;
+    color: #414141;
     font-family: Cerebri Sans SemiBold;
   }
 .block-reveal {
@@ -124,4 +124,7 @@ h3 {
     padding-bottom: 90px;
     font-size: 14pt;
     text-align:center;
+}
+a {
+    color: #000;
 }
