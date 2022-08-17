@@ -1,24 +1,77 @@
+/* FONTS */
 @font-face {
-    font-family: Cerebri Sans Regular;
+    font-family: 'Cerebri Sans';
     src: url(./Fonts/Cerebri-Sans-Regular.ttf);
-    font-weight: bold;
-  }
+    font-weight: 1;
+}
 @font-face {
-    font-family: Cerebri Sans SemiBold;
+    font-family: 'Cerebri Sans';
     src: url(./Fonts/Cerebri-Sans-SemiBold.ttf);
-    font-weight: bold;
-  }
+    font-weight: 2;
+}
 @font-face {
-    font-family: Cerebri Sans Bold;
+    font-family: 'Cerebri Sans';
     src: url(./Fonts/Cerebri-Sans-Bold.ttf);
-    font-weight: bold;
-  }
+    font-weight: 3;
+}
+@font-face {
+    font-family: 'FF Din';
+    src: url(./Fonts/DIN.ttf);
+    font-weight: 1;
+}
+@font-face {
+    font-family: 'FF Din';
+    src: url(./Fonts/DIN\ Medium.ttf);
+    font-weight: 2;
+}
+@font-face {
+    font-family: 'FF Din';
+    src: url(./Fonts/DIN\ Bold.ttf);
+    font-weight: 3;
+}
+ @font-face {
+    font-family: 'FF Din';
+    src: url(./Fonts/DIN\ Black.ttf);
+    font-weight: 4;
+}
+/* BODY */
 body {
-    background-color: #fff5ec;
+    background-color: #0d1821;
     /* background-color: #f8f7f4; */
-    color: #414141;
-    font-family: Cerebri Sans SemiBold;
+    color: #b4cded;
+    /* font-family: 'Cerebri Sans'; */
+    font-family: 'FF Din';
   }
+h1 {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 8em;
+    font-weight: 1;
+}
+h2 {
+    font-size: 16pt;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 60px;
+    font-weight: 1;
+}
+h3 {
+    font-size: 16pt;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+    font-weight: 1;
+}
+a {
+    color: #344966;
+}
+b {
+    font-weight: 2;
+}
+
 .block-reveal {
    
     width: 100%;
@@ -27,26 +80,29 @@ body {
     margin-left: auto;
     padding-top: 75px;
     padding-bottom: 75px;
+    align-items: center;
+    display: inline-flex;
+    flex-direction: column;
 }
-h1 {
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    width: 8em;
+.block-reveal span {
+    font-size: 6rem;
+    font-weight: 3;
+    overflow: hidden;
 }
-h2 {
-    font-size: 16pt;
-    text-align: center;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 60px;
+
+.block-reveal span {position: relative;}
+.block-reveal span:after {
+    background: #b4cded;
+    bottom: 0;
+    content: '';
+    left: 0;
+    opacity: 1;
+    position: absolute;
+    right: 0;
+    top: 0;
 }
-h3 {
-    font-size: 16pt;
-    text-align: center;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 40px;
+.block-reveal span:after {
+    animation: block-reveal 2.0s both;
 }
 .container {
     display: block;
@@ -71,32 +127,8 @@ h3 {
     height: 680px;
     padding-left: 0%;
   }
-.block-reveal {
-    align-items: center;
-    display: inline-flex;
-    flex-direction: column;
-}
 
-.block-reveal span {
-    font-size: 6rem;
-    font-weight: bold;
-    overflow: hidden;
-}
 
-.block-reveal span {position: relative;}
-.block-reveal span:after {
-    background: #414141;
-    bottom: 0;
-    content: '';
-    left: 0;
-    opacity: 1;
-    position: absolute;
-    right: 0;
-    top: 0;
-}
-.block-reveal span:after {
-    animation: block-reveal 2.0s both;
-}
 @keyframes block-reveal {
     0% { transform: translate(-110%, 0);}
     45%, 75% { transform: translate(0, 0);}
@@ -107,24 +139,24 @@ h3 {
 }
 @keyframes show-text {
     0% {color: transparent}
-    50%, 100% {color: #414141;}
+    50%, 100% {color: #b4cdec;}
 }
 .footer {
     font-size: 12pt;
+    font-weight: 1;
     position: relative;
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: #fff5ec;
-    color: #414141;
+    /* background-color: #fff5ec; */
+    /* color: #414141; */
+    color: #344966;
     text-align: center;
 }
 .questions {
     padding-top: 50px;
     padding-bottom: 90px;
+    font-weight: 1;
     font-size: 14pt;
     text-align:center;
-}
-a {
-    color: #000;
 }
